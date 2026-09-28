@@ -1,0 +1,23 @@
+[
+   {
+        "wordId":"1",
+        "type":"Metaphor",
+        "word":"To ford the pass"
+   },
+   {
+        "wordId":"2",
+        "type":"Verb",
+        "word":"To lessen"
+   },
+   {
+        "wordId":"3",
+        "type":"Noun",
+        "word":"Monstrosity"
+   },
+   {
+        "wordId":"4",
+        "type":"Noun",
+        "word":"Marshmallow"
+   }
+
+]
