@@ -1,0 +1,53 @@
+I got to know about the surface of Json: 
+1-json module — core functions:
+json.dumps(obj) → Python object to JSON string
+json.loads(s) → JSON string to Python object
+json.dump(obj, file) → write JSON directly to a file
+json.load(file) → read JSON directly from a file
+
+2-Useful dumps() params:
+indent=2 → pretty-print
+sort_keys=True → deterministic key order
+ensure_ascii=False → keep unicode chars as-is (not \uXXXX)
+
+3-Type mapping (Python ↔ JSON):
+Python	JSON
+dict	object
+list, tuple	array
+str	string
+int, float	number
+True/False	true/false
+None	null
+
+4-Limitations to know early:
+JSON has no tuple, no set, no datetime — only the types above
+Dict keys become strings in JSON, even if they were ints
+Custom objects (classes) aren't serializable by default → need default= param or manual conversion
+
+REQUEST: Now I want to go through each of them, you will be very concise: a precise explanation of what it does and the core syntax: If I have question I will ask you, now let's start with: 1-1: json.dumps(obj) → Python object to JSON string
+
+EXAMPLE: 
+
+1-Definition: json.dumps(obj) converts a Python object into a JSON-formatted string (the "s" stands for string). Nothing is written to disk; you just get text back.
+
+2-Syntax:
+Syntax
+
+python
+import json
+
+data = {"name": "Ada", "age": 36, "skills": ["math", "code"], "active": True, "boss": None}
+
+s = json.dumps(data)
+print(s)
+# {"name": "Ada", "age": 36, "skills": ["math", "code"], "active": true, "boss": null}
+
+print(type(s))  # <class 'str'>
+
+3-Key points:
+
+Output is a str, not a dict. You can't do s["name"].
+Python values are converted: True → true, None → null, strings get double quotes.
+Raises TypeError if the object contains something non-serializable (set, datetime, custom class).
+
+Why it matters for agents: this is how you turn a Python dict into the string you send over HTTP, or the string a tool result must be in (content=json.dumps(result)).
