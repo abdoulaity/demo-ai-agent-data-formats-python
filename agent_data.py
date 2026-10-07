@@ -2,6 +2,11 @@ import random
 import json
 
 with open ("data.json") as f:
-    agent_data = json.loads(f.read())
+    agent_data = json.load(f)
 
-#print(agent_data)
+if isinstance (agent_data, list):
+    print("It's a list")
+
+agent_pick = random.choice(agent_data)
+print(agent_pick)    
+
