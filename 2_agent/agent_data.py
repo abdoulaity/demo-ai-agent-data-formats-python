@@ -1,7 +1,7 @@
 import random
 import json
 
-with open ("data.json") as f:
+with open ("3_data/data.json") as f:
     agent_data = json.load(f)
 
 if isinstance (agent_data, list):
