@@ -16,7 +16,7 @@ This is not a demo about Python basics but rather a **bridge between Python obje
 | 2 | API Message Formats | OpenAI, Anthropic, Databricks, and Converting between Them | |
 | 3 | MLflow Schemas | String, Array, and Messages Inputs; plus Handling Schema Validation Errors | |
 | 4 | Real Agent Calls | OpenAI Client, Databricks SDK, MLflow Pyfunc, Parsing Responses | |
-| 5 | Evaluation Formats | Mlflow Evaluate (legacy) and GenAI Evaluate (New), Custom Scorers, LLM-as-Judge | |
+| 5 | Evaluation Formats | Mlflow Evaluate (legacy) and GenAI Evaluate (new), Custom Scorers, LLM-as-Judge | |
 
 ### Implementation
 
