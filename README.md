@@ -26,10 +26,56 @@ The project is organized into **5 demos**, one per learning level, and **3 small
 
 #### Illustration
 
+```mermaid
 flowchart TD
     subgraph Demos ["DEMOS"]
-        demo_1 --> demo_2 --> demo_3
+        direction LR
+        L1["level_1.ipynb"] --> L2["level_2.ipynb"] --> L3["level_3.ipynb"] --> L4["level_4.ipynb"] --> L5["level_5.ipynb"]
     end
+
+    subgraph G1 ["Level 1 agents"]
+        direction LR
+        L1A1["agent_1"]
+        L1A2["agent_2"]
+        L1A3["agent_3"]
+    end
+
+    subgraph G2 ["Level 2 agents"]
+        direction LR
+        L2A1["agent_1"]
+        L2A2["agent_2"]
+        L2A3["agent_3"]
+    end
+
+    subgraph G3 ["Level 3 agents"]
+        direction LR
+        L3A1["agent_1"]
+        L3A2["agent_2"]
+        L3A3["agent_3"]
+    end
+
+    subgraph G4 ["Level 4 agents"]
+        direction LR
+        L4A1["agent_1"]
+        L4A2["agent_2"]
+        L4A3["agent_3"]
+    end
+
+    subgraph G5 ["Level 5 agents"]
+        direction LR
+        L5A1["agent_1"]
+        L5A2["agent_2"]
+        L5A3["agent_3"]
+    end
+
+    Demos --> G1 & G2 & G3 & G4 & G5
+
+    classDef level fill:#e8f0fe,stroke:#4a6fa5,color:#1a1a1a
+    classDef agent fill:#fff4e0,stroke:#c98a1b,color:#1a1a1a
+
+    class L1,L2,L3,L4,L5 level
+    class L1A1,L1A2,L1A3,L2A1,L2A2,L2A3,L3A1,L3A2,L3A3,L4A1,L4A2,L4A3,L5A1,L5A2,L5A3 agent
+```
 
 ### Technical Stack
 
