@@ -7,19 +7,19 @@ with open ("3_data/data.json", "r", encoding="utf-8") as f:
 
 # 2-Checking if the file is a list (of dicts)
 if isinstance (agent_data, list):
-    print("1-agent_data is a list\n")
+    print("A-agent_data is a list\n")
 else:
-    print("1-agent_data is not a list\n")   
+    print("A-agent_data is not a list\n")   
 
 # 3-Picking randomly one dict that will be sent to the LLM
 agent_pick = random.choice(agent_data)
-print(f"2-The Random choice is: {agent_pick}\n") 
+print(f"B-The Random choice is: {agent_pick}\n") 
 
 # 4-Checking if the elements inside the list are truly dicts
 if isinstance (agent_pick, dict):
-    print("agent_pick is a dict")
+    print("C-agent_pick is a dict\n")
 else:
-    print("agent_pick is not a dict")
+    print("C-agent_pick is not a dict\n")
 
 # 5-Looping over the chosen dict to create a smaller dict for the LLM
 llm_agent_data = dict()
@@ -28,5 +28,5 @@ for key, value in agent_pick.items():
     if key != "wordId":
         llm_agent_data[key] = value
 
-print(f"3-llm_agent_data is a smaller dict: {llm_agent_data}\n")    
+print(f"D-llm_agent_data is a smaller dict: {llm_agent_data}\n")    
     
