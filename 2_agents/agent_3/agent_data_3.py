@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 import random
 import json
 
@@ -10,3 +10,22 @@ with open("3_data/data_full.json", "r", encoding="utf-8") as f:
 # 2-Checking the object type of the new data (agent_data == data_full.json)
 object_type = type(agent_data)
 print(f"B-agent_data that holds the new dataset is a: {object_type} (of 3 Dicts and 1 List: Dict -> Dict, then List -> Dict)\n")
+
+# 3- Dataclass:
+@dataclass
+class WordList:
+    word_id: int
+    word_type: str
+    word: str 
+
+@dataclass
+class Book:
+    author_name: str
+    book_name: str
+    publisher_name: str
+    isbn_number: str
+    words: list[WordList] = field(default_factory=list)
+  
+
+              
+

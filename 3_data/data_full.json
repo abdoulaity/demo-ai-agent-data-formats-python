@@ -1,17 +1,17 @@
 {
-     "entry1": 
+     "1TheManDied": 
      {
           "authorName":"Wolé Soyinka",
           "bookName":"The Man Died, Prison Notes of Wolé Soyinka",
           "publisherName":"BOOKCRAFT",
           "isbnNumber":"978-978-60044-2-6",
 
-          "words": 
+          "wordList": 
           [
-               {"wordId":1, "type":"Metaphor", "word":"To ford the pass"},
-               {"wordId":2, "type":"Verb", "word":"To lessen"},
-               {"wordId":3, "type":"Noun", "word":"Monstrosity"},
-               {"wordId":4, "type":"Noun", "word":"Marshmallow"}
+               {"wordId":1, "wordType":"Metaphor", "word":"To ford the pass"},
+               {"wordId":2, "wordType":"Verb", "word":"To lessen"},
+               {"wordId":3, "wordType":"Noun", "word":"Monstrosity"},
+               {"wordId":4, "wordType":"Noun", "word":"Marshmallow"}
           ]
      }
 }

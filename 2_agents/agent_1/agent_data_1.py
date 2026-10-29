@@ -22,7 +22,7 @@ if isinstance (agent_pick, dict):
 else:
     print("D-agent_pick is not a dict\n")
 
-# 5-Looping over the chosen dict to create a smaller dict for the LLM
+# 5-Looping over the chosen dict to create a smaller dict in the end for the LLM
 llm_agent_data = dict()
 for key, value in agent_pick.items():
     # The item/pair we want to exclude each time ("wordId": "id")
