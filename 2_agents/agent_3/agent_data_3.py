@@ -13,7 +13,7 @@ print(f"B-agent_data that holds the new dataset is a: {object_type} (of 3 Dicts 
 
 # 3- Dataclass:
 @dataclass
-class WordList:
+class WordRecord:
     word_id: int
     word_type: str
     word: str 
@@ -24,7 +24,7 @@ class Book:
     book_name: str
     publisher_name: str
     isbn_number: str
-    words: list[WordList] = field(default_factory=list)
+    words_list: list[WordRecord] = field(default_factory=list)
   
 
               

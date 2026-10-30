@@ -6,7 +6,7 @@
           "publisherName":"BOOKCRAFT",
           "isbnNumber":"978-978-60044-2-6",
 
-          "wordList": 
+          "wordRecords": 
           [
                {"wordId":1, "wordType":"Metaphor", "word":"To ford the pass"},
                {"wordId":2, "wordType":"Verb", "word":"To lessen"},
